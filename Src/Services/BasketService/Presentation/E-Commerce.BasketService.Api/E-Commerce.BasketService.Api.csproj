@@ -1,0 +1,26 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net7.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <RootNamespace>E_Commerce.BasketService.Api</RootNamespace>
+    <UserSecretsId>31c812a1-6467-4775-8177-8c2f806042d0</UserSecretsId>
+    <Platforms>AnyCPU;ARM32</Platforms>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Consul" Version="1.6.10.9" />
+    <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="7.0.9" />
+    <PackageReference Include="StackExchange.Redis.Extensions.AspNetCore" Version="9.1.0" />
+    <PackageReference Include="StackExchange.Redis.Extensions.System.Text.Json" Version="9.1.0" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.5.0" />
+    <PackageReference Include="System.IdentityModel.Tokens.Jwt" Version="6.32.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\Infrastructure\E-Commerce.BasketService.Infrastructure\E-Commerce.BasketService.Infrastructure.csproj" />
+    <ProjectReference Include="..\..\Infrastructure\E-Commerce.BasketService.Persistence\E-Commerce.BasketService.Persistence.csproj" />
+  </ItemGroup>
+
+</Project>

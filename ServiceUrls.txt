@@ -1,0 +1,8 @@
+notification service  => console app
+
+Web.ApiGateway			https://localhost:6161; http://localhost:5151
+PaymentService.Api		https://localhost:7088; http://localhost:5088
+OrderService.Api		https://localhost:7011;http://localhost:5011
+BaskerService.Api		https://localhost:7051;http://localhost:5051
+CatalogService.Api		https://localhost:7017;http://localhost:5017
+IdentityService.Api     https://localhost:7066;http://localhost:5066

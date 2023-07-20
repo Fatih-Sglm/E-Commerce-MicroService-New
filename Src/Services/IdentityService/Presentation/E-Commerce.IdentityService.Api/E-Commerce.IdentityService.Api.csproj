@@ -1,0 +1,26 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net7.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <RootNamespace>E_Commerce.IdentityService.Api</RootNamespace>
+    <UserSecretsId>8e40242c-a562-43c1-b5f3-42926a8018bc</UserSecretsId>
+    <Platforms>AnyCPU;ARM32</Platforms>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Consul" Version="1.6.10.9" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="7.0.9">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.5.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\Infrastructure\E-Commerce.IdentityService.Infrastructure\E-Commerce.IdentityService.Infrastructure.csproj" />
+    <ProjectReference Include="..\..\Infrastructure\E-Commerce.IdentityService.Persistence\E-Commerce.IdentityService.Persistence.csproj" />
+  </ItemGroup>
+
+</Project>

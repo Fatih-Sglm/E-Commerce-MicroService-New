@@ -1,0 +1,26 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+	<PropertyGroup>
+		<TargetFramework>net7.0</TargetFramework>
+		<Nullable>enable</Nullable>
+		<ImplicitUsings>enable</ImplicitUsings>
+		<RootNamespace>E_Commerce.CatalogService.Api</RootNamespace>
+		<UserSecretsId>549959d3-340d-4668-977e-2a352eb9af8e</UserSecretsId>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<PackageReference Include="Microsoft.AspNetCore.OpenApi" Version="7.0.9" />
+		<PackageReference Include="Consul" Version="1.6.10.9" />
+		<PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="7.0.9" />
+		<PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="7.0.9">
+		</PackageReference>
+		<PackageReference Include="Swashbuckle.AspNetCore" Version="6.5.0" />
+		<PackageReference Include="System.IdentityModel.Tokens.Jwt" Version="6.32.0" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <ProjectReference Include="..\..\Infrastructure\E-Commerce.CatalogService.Infrastructure\E-Commerce.CatalogService.Infrastructure.csproj" />
+	  <ProjectReference Include="..\..\Infrastructure\E-Commerce.CatalogService.Persistence\E-Commerce.CatalogService.Persistence.csproj" />
+	</ItemGroup>
+
+</Project>

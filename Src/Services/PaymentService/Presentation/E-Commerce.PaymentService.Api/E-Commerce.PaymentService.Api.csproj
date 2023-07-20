@@ -1,0 +1,28 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net7.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <RootNamespace>E_Commerce.PaymentService.Api</RootNamespace>
+    <UserSecretsId>35a6f989-41cc-4ff8-8e87-1e2af6488881</UserSecretsId>
+    <Platforms>AnyCPU;ARM32</Platforms>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Controllers\**" />
+    <Content Remove="Controllers\**" />
+    <EmbeddedResource Remove="Controllers\**" />
+    <None Remove="Controllers\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.5.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\Core\E-Commerce.PaymentService.Application\E-Commerce.PaymentService.Application.csproj" />
+    <ProjectReference Include="..\..\Infrastructure\E-Commerce.PaymentService.Infrastructure\E-Commerce.PaymentService.Infrastructure.csproj" />
+  </ItemGroup>
+
+</Project>
